@@ -1,0 +1,111 @@
+.unit {
+  fill: none;
+  stroke-width: 1.3;
+  -webkit-animation-name: render;
+          animation-name: render;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s; 
+}
+
+.unit:nth-child(1) {
+  stroke: rgb(252 216 65);
+  stroke-dasharray: 33 67;
+  stroke-dashoffset: 20;
+  stroke-linecap: round;
+}
+
+.unit:nth-child(2) {
+  stroke: rgb(128 178 95);
+  stroke-dasharray: 31 69;
+  stroke-dashoffset: -13;
+  stroke-linecap: round;
+}
+
+.unit:nth-child(3) {
+  stroke: rgb(238 238 238);
+  stroke-dasharray: 26 74;
+  stroke-dashoffset: -44;
+  stroke-linecap: round;
+}
+
+.chart__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.chart__procent_integers {
+  text-anchor: middle;
+  transform: translateY(-0.65em);
+  fill: rgb(85 85 85);
+  font-size: 7px;
+}
+
+.chart__procent_decimal {
+  text-anchor: middle;
+  transform: translateY(-1.1em);
+  fill: rgb(85 85 85);
+  font-size: 4px;
+}
+
+.chart__procent_procent {
+  text-anchor: middle;
+  transform: translateY(-3.25em);
+  fill: rgb(183 185 205);
+  font-size: 2.5px;
+}
+
+.chart__title {
+  text-anchor: middle;
+  transform: translateY(-0.25em);
+  fill: rgb(85 85 85);
+  font-size: 3px;
+  letter-spacing: 0.1px;
+  font-weight: bold;
+}
+
+.chart__subtitle {
+  text-anchor: middle;
+  transform: translateY(1.35em);
+  fill: rgb(252 216 65);
+  font-size: 2.5px;
+  font-weight: bold;
+}
+
+.chart__description {
+  text-anchor: middle;
+  fill: rgb(183 185 205);
+  font-size: 1.7px;
+}
+
+.chart__description_first {
+  transform: translateY(3.25em);
+
+}
+
+.chart__description_second {
+  transform: translateY(4.25em);
+}
+
+.chart__description_third {
+  transform: translateY(5.35em);
+}
+
+.chart__growth {
+  text-anchor: middle;
+  fill: rgb(128 178 95);
+  font-size: 2.7px;
+  transform: translateY(4.55em);
+  position: relative;
+}
+
+@-webkit-keyframes render {
+  0% {
+    stroke-dasharray: 10 100;
+  }
+}
+
+@keyframes render {
+  0% {
+    stroke-dasharray: 10 100;
+  }
+}
